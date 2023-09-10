@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSTASK-7</title>
+    <style>
+        .outer-box {
+            background-color: rgb(147, 14, 92);
+            width: 600px;
+            margin: auto;
+            padding-left: 170px;
+            padding-right: 170px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+        }
+
+        .inner-box {
+            padding: 20px;
+            padding-left:100px;
+            background-color: rgb(104, 13, 66);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border-collapse: collapse;
+            
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+
+        .register-button {
+            margin-top: 10px;
+            padding-right: 200px;
+            text-align: center;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            
+            <form>
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td><input type="text" name="name" placeholder="your name"></td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td><input type="email" name="email" placeholder="your email"></td>
+                    </tr>
+                    <tr>
+                        <th>Password:</th>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number:</th>
+                        <td><input type="text" name="number"></td>
+                             </td>
+                    </tr>
+                    <tr>
+                        <th>Gender:</th>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Language:</th>
+                        <td><select>  
+                            <option value="lan">Select language</option>  
+                            <option >Hindi</option>  
+                            <option >English</option>  
+                            <option >Tamil</option>  
+                            <option >Telugu</option>  </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <th>Zip Code:</th>
+                        <td><input type="text" name="zip"></td>
+                    </tr>
+                    <tr>
+                        <th>About:</th>
+                        <td><textarea name="about" rows="3" placeholder="Write about yourself.."></textarea></td>
+                    </tr>
+                </table>
+                <div class="register-button">
+                    <input type="submit" value="Register" style="height:50px; width:400px;border-radius: 10px; font-size: 20px;text-decoration: bold;" >
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
